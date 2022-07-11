@@ -42,7 +42,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date();
-      const end = new Date("9/19/2022 10:33:18");
+      const end = new Date("9/18/2022 19:15:00");
       const diffTime = end.getTime() - now.getTime();
       get_dhms(diffTime);
     }, 1000);
