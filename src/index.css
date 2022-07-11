@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply h-screen
+  bg-indigo-800
+  flex
+  justify-center
+  align-middle
+  place-items-center;
+}
+
+.cell-container {
+  @apply grid lg:grid-cols-4 
+  grid-cols-1
+
+  gap-4;
+}
+
+.cell {
+  @apply lg:h-60
+  lg:w-60
+  w-48
+  h-40
+  grid
+
+hover:bg-teal-700
+  hover:scale-110
+  hover:text-white
+  transition ease-in-out delay-100  
+  duration-300
+  font-mono
+  subpixel-antialiased
+  place-items-center
+  text-lg 
+  rounded-lg
+  bg-indigo-700;
+}
